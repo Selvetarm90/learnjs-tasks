@@ -6,11 +6,11 @@ let list = {
       value: 3,
       next: {
         value: 4,
-        next: null
-      }
-    }
-  }
-}
+        next: null,
+      },
+    },
+  },
+};
 function printReverse(list) {
   if (list.next) {
     printReverse(list.next);
@@ -27,6 +27,6 @@ function printReverse2(list) {
     arr.push(curentList.value);
     curentList = curentList.next;
   }
-  return arr.reverse().forEach((i) => console.log(i))
+  return arr.reverse().forEach((i) => console.log(i));
 }
 printReverse2(list);
